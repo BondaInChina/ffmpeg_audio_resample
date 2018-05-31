@@ -10,8 +10,13 @@ extern "C"
 
 using namespace std;
 
+#ifdef _WIN32
+static const char *path = "E:\\test.mp4";
+static const char *pcmPath = "E:\\test.pcm";
+#else
 static const char *path = "/home/test.mp4";
 static const char *pcmPath = "/home/liangjf/test.pcm";
+#endif
 
 int main(int argc, char *argv[])
 {
